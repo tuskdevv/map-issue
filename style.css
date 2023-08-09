@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+img {
+  display: block;
+}
+li {
+  list-style: none;
+}
+.blog {
+  max-width: 80rem;
+  width:90%;
+  margin-inline:auto;
+  padding-block:5vh;
+}
+.blog-title {
+  margin-bottom:4rem;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color:#222;
+  font-size:clamp(1.5rem,1.6vw,2.5rem);
+}
+.blog-cards {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap:4rem 5rem;
+}
+.card-image {
+  width:100%;
+  object-fit: cover;
+  aspect-ratio: 1/.5;
+  margin-bottom: 2rem;
+
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.card-info {
+  padding:0 2rem 2rem 2rem;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card-title {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom:1rem;
+}
+@media (max-width:992px){
+  .blog-cards {
+    grid-template-columns: 1fr;
+  }
+}
